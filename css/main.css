@@ -1,0 +1,157 @@
+p {
+  margin: 0;
+}
+
+.no-padding {
+}
+.btn {
+  border: 0;
+  background: #ea5b0c;
+}
+
+#tete {
+  margin-left: -15px;
+  margin-right: -15px;
+
+  color: #fff;
+  overflow: hidden;
+  background: url(../images/background-tete.jpg) no-repeat center top;
+  background-size: cover;
+  position: relative;
+}
+#tete-iphone {
+  position: absolute;
+  right: 0; bottom: 0;
+  transform: translate(0, 400px);
+}
+#tete .separator.clear .visible-lg {
+  height: 35vh;
+}
+#tete .content {
+  max-width: 500px;
+}
+#tete .content h1,
+#tete .content a.btn {
+  font-family: DINNeuzeitGrotesk;
+  font-weight: bold;
+}
+#tete .content .btn {
+  border: 2px solid #fff;
+  background: #ea5b0c;
+  padding: 10px 45px;
+}
+
+#equipe-maraude {
+  background-image: url(../images/background-maraude.jpg);
+}
+#responsable-associatif {
+  background-image: url(../images/background-associatif.jpg);
+}
+.maraude-associatif {
+  color: #ffffff;
+  background: none no-repeat center top;
+  background-size: cover;
+}
+.maraude-associatif h2 {
+  margin-bottom: 80px;
+}
+.maraude-associatif h2 span {
+  color: #ea5b0c;
+  display: block;
+  font-size: .8em;
+}
+.maraude-associatif-block {
+  padding: 50px;
+  position: relative;
+}
+.maraude-associatif-block .link-overlay {
+  display: none;
+
+  z-index: 10;
+  position: absolute;
+  bottom: 0; left: 0;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  padding-right: 20px;;
+}
+.maraude-associatif-block-video .link-to-video {
+  z-index: 5;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+.maraude-associatif-block-text {
+  background: rgba(0, 0, 0, .6);
+}
+.maraude-associatif-block-text.text-left {
+  padding-right: 150px;
+}
+.maraude-associatif-block-text.text-right {
+  padding-left: 150px;
+}
+.maraude-associatif-block-text ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.maraude-associatif-block-text ul li {
+  font-size: 15px;
+}
+.maraude-associatif-block-text ul li+li {
+  margin-top: 50px;
+}
+
+#adherer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#adherer a {
+  display: block;
+}
+#adherer h2 {
+  margin: 0;
+  display: inline-block;
+  background: url(../images/background-adherer.png) no-repeat center top;
+  background-size: 100% 100%;
+  padding: 50px;
+  letter-spacing: 2px;
+  font-size: 32.27px;
+}
+#adherer h2 > span {
+  display: block;
+  font-size: 16.66px;
+  letter-spacing: 1px;
+}
+
+#equipe {
+  position: relative;
+  margin-bottom: 58px;
+}
+#equipe-voir-plus {
+  position: absolute;
+  bottom: -58px;
+  left: 50%;
+  margin-left: -55px;;;
+}
+#equipe-voir-plus a {
+  display: block;
+  color: #e1e1e1;
+  font-size: 12px;
+  line-height: 58px;
+  background: url(../images/voir-plus.jpg) no-repeat left center;
+  padding-left: 60px;
+  width: 110px;;
+}
+.equipe-block {
+
+}
+.equipe-block .overlay {
+  color: #fff;
+  background-color: rgba(234, 91, 12, .7);
+}
+.equipe-block .overlay p.name {
+  font-size: 21px;
+}
+.equipe-block .overlay p.name span {
+  display: block;
+  font-size: 13.67px;
+}
