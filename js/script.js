@@ -11,5 +11,9 @@
       if('' === this.value)
         $('label[for=' + this.id + ']').parent().removeClass('active')
     });
+    $('#equipe-voir-plus').on('click', function(event) {
+      event.preventDefault();
+      $('#equipe-plus').slideToggle();
+    });
   });
 })();
