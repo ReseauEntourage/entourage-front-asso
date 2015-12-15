@@ -1,9 +1,23 @@
-p {
+html {
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, p {
+  margin: 0;
+  font-weight: normal;
+}
+label {
   margin: 0;
 }
 
-.no-padding {
+.no-padding,
+.no-padding-left {
+  padding-left: 0;
 }
+.no-padding,
+.no-padding-right {
+  padding-right: 0;
+}
+
 .btn {
   border: 0;
   background: #ea5b0c;
@@ -24,11 +38,11 @@ p {
   right: 0; bottom: 0;
   transform: translate(0, 400px);
 }
-#tete .separator.clear .visible-lg {
-  height: 35vh;
-}
 #tete .content {
   max-width: 500px;
+}
+#tete .content h1 {
+  margin-bottom: 50px;
 }
 #tete .content h1,
 #tete .content a.btn {
@@ -39,6 +53,12 @@ p {
   border: 2px solid #fff;
   background: #ea5b0c;
   padding: 10px 45px;
+}
+
+#notre-vision {
+}
+#notre-vision h2 {
+  color: #ea5b0c;
 }
 
 #equipe-maraude {
@@ -82,12 +102,6 @@ p {
 .maraude-associatif-block-text {
   background: rgba(0, 0, 0, .6);
 }
-.maraude-associatif-block-text.text-left {
-  padding-right: 150px;
-}
-.maraude-associatif-block-text.text-right {
-  padding-left: 150px;
-}
 .maraude-associatif-block-text ul {
   margin: 0;
   padding: 0;
@@ -107,21 +121,24 @@ p {
 #adherer a {
   display: block;
 }
-#adherer h2 {
+#adherer a div {
   margin: 0;
   display: inline-block;
   background: url(../images/background-adherer.png) no-repeat center top;
   background-size: 100% 100%;
-  padding: 50px;
+  padding: 45px;
+}
+#adherer h2 {
+  padding: 5px;
+  background: #fff;
   letter-spacing: 2px;
   font-size: 32.27px;
 }
-#adherer h2 > span {
+#adherer h2 span {
   display: block;
   font-size: 16.66px;
   letter-spacing: 1px;
 }
-
 #equipe {
   position: relative;
   margin-bottom: 58px;
@@ -130,28 +147,132 @@ p {
   position: absolute;
   bottom: -58px;
   left: 50%;
-  margin-left: -55px;;;
+  margin-left: -55px;
 }
 #equipe-voir-plus a {
   display: block;
-  color: #e1e1e1;
+  color: #ccc;
   font-size: 12px;
   line-height: 58px;
   background: url(../images/voir-plus.jpg) no-repeat left center;
   padding-left: 60px;
   width: 110px;;
 }
+#equipe-voir-plus a:hover {
+  color: #333;
+}
 .equipe-block {
-
+  position: relative;
+  background-size: cover;
+}
+.equipe-block:hover .overlay {
+  opacity: 1;
 }
 .equipe-block .overlay {
+  /*opacity: 0;*/
   color: #fff;
+  padding: 30px;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-color: rgba(234, 91, 12, .7);
+}
+.equipe-block .overlay > div {
+  position: relative;
+  height: 100%;
 }
 .equipe-block .overlay p.name {
   font-size: 21px;
+  position: relative;
+  top: 50%; transform: translateY(-50%);
 }
 .equipe-block .overlay p.name span {
   display: block;
   font-size: 13.67px;
+}
+.equipe-block .overlay p.text-bottom {
+  bottom: 0;
+  position: absolute;
+}
+
+#temoignages {
+
+}
+.temoignages-block-text {
+  color: #fff;
+  padding: 60px 50px 30px;
+  background-color: rgb(234, 91, 12);
+}
+.temoignages-block-text h4 {
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+}
+.temoignages-block-text h4 span {
+  color: #8f390b;
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+}
+.temoignages-block-slider-slide p {
+  text-align: justify;;
+}
+
+#contact {
+
+}
+#contact h2 {
+  color: #ea5b0c;
+  font-size: 25px;
+}
+#contact .btn-submit {
+  padding: 8px 25px;
+  letter-spacing: 1px;
+}
+form#contact_form .input-field {
+  margin: 30px 0 80px;
+}
+
+/* Material-like design - BEGIN */
+.input-field {
+  position: relative;
+}
+.input-field > * {
+  padding: 0 10px;
+}
+.input-field label {
+  top: 12px;
+  color: #d2510b;
+  position: absolute;
+  font-weight: normal;
+}
+.input-field.active label {
+  top: -30px;
+  color: #ea5b0c;
+  font-size: 12px;
+}
+.input-field textarea.field {
+  resize: none;
+}
+.input-field .field {
+  width: 100%;
+  outline: none;
+  display: block;
+  border: 1px solid #ea5b0c;
+  border-left: 0;
+  border-right: 0;
+  line-height: 40px;
+}
+.input-field .field:focus {
+  margin: -10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.input-field label,
+.input-field .field {
+  transition: 0.2s ease-out
+}
+/* Material-like design - END */
+
+#bas_de_page {
+  background: #e1e1e1;
 }
