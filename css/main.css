@@ -79,6 +79,27 @@ blockquote:after {
   padding: 10px 45px;
 }
 
+#stats {
+  padding: 90px 0;
+  background: #ea5b0c;
+}
+#stats .stats-box {
+  width: 33%;
+  margin: auto;
+  display: inline-block;
+}
+#stats .stats-box span.number {
+  color: #000;
+  float: left;
+  font-size: 100px;
+  line-height: 100px;
+}
+#stats .stats-box span._label {
+  color: #fff;
+  font-size: 50px;
+  line-height: 50px;
+}
+
 #notre-vision {
 }
 #notre-vision h2 {
