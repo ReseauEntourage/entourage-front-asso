@@ -1,0 +1,10 @@
+{
+    "name": "entourage/entourage-front-asso",
+    "authors": [
+        {
+            "name": "Gabriel Kaam",
+            "email": "gkaam@octo.com"
+        }
+    ],
+    "require": {}
+}
