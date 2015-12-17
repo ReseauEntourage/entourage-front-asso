@@ -33,15 +33,6 @@ blockquote:after {
   top: .5em;
 }
 
-.no-padding,
-.no-padding-left {
-  padding-left: 0;
-}
-.no-padding,
-.no-padding-right {
-  padding-right: 0;
-}
-
 .btn {
   border: 0;
   background: #ea5b0c;
