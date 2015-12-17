@@ -229,6 +229,9 @@ input {
   position: relative;
   top: 50%; transform: translateY(-50%);
 }
+.equipe-block.equipe-block-small .overlay p.name {
+  top: 30%;
+}
 .equipe-block .overlay p.name span {
   display: block;
   font-size: 13.67px;
