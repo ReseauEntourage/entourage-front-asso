@@ -15,5 +15,24 @@
       event.preventDefault();
       $('#equipe-plus').slideToggle();
     });
+
+    $('#contact_form').on('submit', function(event) {
+      var $form = $(this);
+      event.preventDefault();
+
+      $.ajax({
+        url: $form.attr('action'),
+        method: $form.attr('method'),
+        data: $form.serialize(),
+      })
+      .done(function(data) {
+        alert('Message bien envoyé ! Merci')
+      })
+      .fail(function(data) {
+        alert('Error: Le message n\'a pas été envoyé !')
+      })
+      .always(function() {
+      })
+    })
   });
 })();
