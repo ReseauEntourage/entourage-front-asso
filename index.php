@@ -20,4 +20,9 @@ if(!isset($_CONF[$ENV])) {
 }
 $CONF = $_CONF[$ENV];
 
-include 'home.html';
+$html_file = 'index.html'
+if(isset($_GET['path']) && 'contact' === $_GET['path']) {
+  $html_file = 'contact.html';
+}
+
+include $html_file;
