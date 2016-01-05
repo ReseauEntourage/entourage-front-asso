@@ -51,6 +51,45 @@ $.fn.serializeObject = function() {
       })
       .always(function() {
       })
-    })
+    });
+
+    $('#registration_form').on('submit', function(event) {
+      var $form = $(this);
+      event.preventDefault();
+
+      $.ajax({
+        url: $form.attr('action'),
+        method: $form.attr('method'),
+        data: { registration_request:
+          {
+            organization: {
+              name: $('#registration_form-1-name').val(),
+              local_entity: $('#registration_form-1-local_entity').val(),
+              address: $('#registration_form-1-address').val(),
+              phone: $('#registration_form-1-phone').val(),
+              email: $('#registration_form-1-email').val(),
+              website_url: $('#registration_form-1-website_url').val(),
+              description: $('#registration_form-1-description').val(),
+              logo_key: $('#registration_form-1-logo_key').val(),
+            },
+            user: {
+              first_name: $('#registration_form-2-first_name').val(),
+              last_name: $('#registration_form-2-last_name').val(),
+              phone: $('#registration_form-2-phone').val(),
+              email: $('#registration_form-2-email').val(),
+            },
+          },
+        },
+        dataType: 'json',
+      })
+      .done(function(data) {
+        alert('Message bien envoyé ! Merci')
+      })
+      .fail(function(data) {
+        alert('Error: Le message n\'a pas été envoyé !')
+      })
+      .always(function() {
+      })
+    });
   });
 })();

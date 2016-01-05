@@ -21,8 +21,8 @@ if(!isset($_CONF[$ENV])) {
 $CONF = $_CONF[$ENV];
 
 $html_file = 'index.html'
-if(isset($_GET['path']) && 'contact' === $_GET['path']) {
-  $html_file = 'contact.html';
+if(isset($_GET['path']) && 'adherer' === $_GET['path']) {
+  $html_file = 'adherer.html';
 }
 
 include $html_file;

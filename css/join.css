@@ -1,0 +1,101 @@
+#tete {
+  background-image: url(../images/background-maraude.jpg);
+}
+#tete .overlay {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background: rgba(0, 0, 0, .7);
+}
+#adherer p,
+#adherer h2 {
+  color: #ea5b0c;
+}
+.step-indicator {
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  background: #ea5b0c;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+#registration_form .btn {
+  color: #fff;
+  padding: 8px 25px;
+  letter-spacing: 1px;
+}
+#registration_form .btn-default {
+  background: #c9c9c9;
+}
+#registration_form .btn-default:hover {
+  background: #ea5b0c;
+}
+#registration_form-2-agreement {
+  outline: 2px solid #ea5b0c;
+}
+label[for=registration_form-2-agreement] {
+  color: #ea5b0c;
+}
+.checkbox-field {
+  position: relative;
+  margin-top: 15px;
+}
+.checkbox-field label {
+  cursor: pointer;
+  padding-left: 30px;
+  letter-spacing: 1px;
+}
+.checkbox-field input {
+  top: 50%;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: -6px;
+}
+.checkbox-field input:checked,
+.checkbox-field input:not(:checked) {
+   left: -99999999999px;
+}
+
+.checkbox-field input:not(:checked) ~ label:before,
+.checkbox-field input:checked ~ label:before,
+.checkbox-field input:not(:checked) ~ label:after,
+.checkbox-field input:checked ~ label:after {
+  transition-duration: .3s;
+  margin-top: 20px;
+}
+.checkbox-field input:not(:checked) ~ label:before,
+.checkbox-field input:checked ~ label:before {
+  content: '';
+  position: absolute;
+  left: 0; top: 2px;
+  width: 17px; height: 17px;
+  border: 2px solid #ea5b0c;
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: .3s;
+}
+.checkbox-field input:checked ~ label:before {
+  opacity: 0;
+  transform: scale(0);
+  transition-delay: .0s;
+}
+.checkbox-field input:not(:checked) ~ label:after,
+.checkbox-field input:checked ~ label:after {
+  content: '';
+  position: absolute;
+  border:2px solid #0f9d58;
+  border-top: 0;
+  border-left: 0;
+  left: 4px;
+  top: 0;
+  font-size: 14px;
+  color: #09ad7e;
+  width: 12px; height: 24px;
+  opacity: 0;
+  transform: rotate(180deg);
+  transition-delay: .0s;
+}
+.checkbox-field input:checked ~ label:after {
+  opacity: 1;
+  transform: scale(1) rotate(45deg);
+  transition-delay: .3s;
+}
