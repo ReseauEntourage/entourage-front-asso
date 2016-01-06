@@ -1,7 +1,7 @@
 var ready = function() {
-  var form         = $('#contact_form');
-  var fileInput    = form.find("input:file");
-  var submitButton = form.find('input[type="submit"]');
+  var form         = $('#registration_form');
+  var fileInput    = $('#registration_form-download');
+  var submitButton = $('#registration_form-submit');
   var progressBar  = $("<div class='bar'></div>");
   var barContainer = $("<div class='progress'></div>").append(progressBar);
   fileInput.after(barContainer);

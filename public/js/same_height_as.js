@@ -24,9 +24,9 @@ window.SameHeightAs = function() {
       return;
     }
 
-    $that.css('min-height', $same_height_as.height());
+    $that.css('min-height', $same_height_as.innerHeight());
     if(fixed_size) {
-      $that.css('height', $same_height_as.height());
+      $that.css('height', $same_height_as.innerHeight());
     }
   }
 

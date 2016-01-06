@@ -7,6 +7,7 @@ h1, h2, h3, h4, p {
 }
 label {
   margin: 0;
+  font-weight: normal;
 }
 blockquote {
   border: 0;
@@ -66,6 +67,8 @@ input {
 #tete .content h1,
 #tete .content a.btn {
   font-family: DINNeuzeitGrotesk;
+}
+#tete .content a.btn {
   font-weight: bold;
 }
 #tete .content .btn {
@@ -158,10 +161,10 @@ input {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#adherer a {
+#adherer a.bandeau {
   display: block;
 }
-#adherer a div {
+#adherer a.bandeau div {
   margin: 0;
   display: inline-block;
   background: url(../images/background-adherer.png) no-repeat center top;
@@ -275,7 +278,7 @@ input {
   padding: 8px 25px;
   letter-spacing: 1px;
 }
-form#contact_form .input-field {
+form.material .input-field {
   margin: 30px 0 50px;
 }
 
@@ -290,7 +293,6 @@ form#contact_form .input-field {
   top: 12px;
   color: #d2510b;
   position: absolute;
-  font-weight: normal;
 }
 .input-field.active label {
   top: -30px;
@@ -323,7 +325,7 @@ form#contact_form .input-field {
 }
 .input-field label,
 .input-field .field {
-  transition: 0.2s ease-out
+  transition: 0.2s ease-out;
 }
 /* Material-like design - END */
 
