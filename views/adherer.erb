@@ -44,7 +44,7 @@
 
     <div class="container-fluid">
       <div id="adherer">
-        <form id="registration_form" class="material" method="POST" action="https://entourage-back-preprod.herokuapp.com/api/v0/registration_requests" data-form-data=<%= @s3_direct_post.fields.to_json %> data-url=<%= @s3_direct_post.url %> data-host=<%= URI.parse(@s3_direct_post.url).host %> >
+        <form id="registration_form" class="material" method="POST" action="<%= @registration_requests_form_url %>" data-form-data=<%= @s3_direct_post.fields.to_json %> data-url=<%= @s3_direct_post.url %> data-host=<%= URI.parse(@s3_direct_post.url).host %> >
           <input id="registration_form-1-logo_key" name="logo_key" type="hidden" required>
 
           <div class="row">
