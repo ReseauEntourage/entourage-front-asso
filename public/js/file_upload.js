@@ -1,11 +1,11 @@
 var ready = function() {
   var form         = $('#registration_form');
-  var fileInput    = $('#registration_form-logo');
+  var fileInput    = $('#registration_form-1-logo-input');
   var submitButton = $('#registration_form-submit');
   var progressBar  = $("<div class='bar'></div>");
   var barContainer = $("<div class='progress'></div>").append(progressBar);
-  fileInput.after(barContainer);
-  
+  fileInput.parent().after(barContainer);
+
   //see https://github.com/blueimp/jQuery-File-Upload/wiki/Options
   fileInput.fileupload({
       fileInput:       fileInput,

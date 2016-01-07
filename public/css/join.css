@@ -32,6 +32,17 @@
 #registration_form-2-agreement {
   outline: 2px solid #ea5b0c;
 }
+#registration_form-1-logo-container {
+  position: relative;
+}
+#registration_form-1-logo-input {
+  opacity: 0;
+  z-index: 10;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
 label[for=registration_form-2-agreement] {
   color: #ea5b0c;
 }
