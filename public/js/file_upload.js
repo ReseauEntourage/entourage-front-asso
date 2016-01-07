@@ -1,6 +1,6 @@
 var ready = function() {
   var form         = $('#registration_form');
-  var fileInput    = $('#registration_form-download');
+  var fileInput    = $('#registration_form-logo');
   var submitButton = $('#registration_form-submit');
   var progressBar  = $("<div class='bar'></div>");
   var barContainer = $("<div class='progress'></div>").append(progressBar);
@@ -33,13 +33,9 @@ var ready = function() {
         submitButton.prop('disabled', false);
         progressBar.text("Uploading done");
 
-        // extract key and generate URL from response
+        // extract key from response
         var key   = $(data.jqXHR.responseXML).find("Key").text();
-        var url   = '//' + form.data('host') + '/' + key;
-
-        // create hidden field
-        var input = $("<input />", { type:'hidden', name: fileInput.attr('name'), value: url })
-        form.append(input);
+        $('#registration_form-1-logo_key').val(key);
       },
       fail: function(e, data) {
         submitButton.prop('disabled', false);
