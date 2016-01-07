@@ -175,6 +175,7 @@
 
       <div id="contact">
         <form id="contact_form" class="material" method="POST" action="<%= @messages_form_url %>">
+          
           <div class="row">
             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
               <h2 class="text-center">VOUS AVEZ UNE QUESTION ?<br />CONTACTEZ-NOUS</h2>
@@ -227,6 +228,20 @@
               <button type="submit" class="btn btn-submit btn-primary center-block">ENVOYER</button>
             </div>
           </div> <!-- /.row -->
+          
+          <br><br>
+          <div class="row">
+            <div class="alert alert-warning alert-dismissible hidden" role="alert" id="alert-box">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <ul id="errors-list">
+                
+              </ul>
+            </div>
+            <div class="alert alert-success alert-dismissible hidden" role="alert" id="success-box">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Le message a bien été envoyé
+            </div>
+          </div>
         </form>
       </div> <!-- /#contact -->
 

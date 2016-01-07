@@ -44,10 +44,17 @@ $.fn.serializeObject = function() {
         dataType: 'json',
       })
       .done(function(data) {
-        alert('Message bien envoyé ! Merci')
+        $("#success-box").removeClass("hidden");
+        $("#alert-box").addClass("hidden");
       })
       .fail(function(data) {
-        alert('Error: Le message n\'a pas été envoyé !')
+        $("#success-box").addClass("hidden");
+        $("#alert-box").removeClass("hidden");
+        errors = JSON.parse(data.responseText).errors;
+        $("#errors-list").html("");
+        errors.forEach(function(entry) {
+          $("#errors-list").append("<li>"+entry+"</li>")
+        });
       })
       .always(function() {
       })
@@ -83,10 +90,23 @@ $.fn.serializeObject = function() {
         dataType: 'json',
       })
       .done(function(data) {
-        alert('Message bien envoyé ! Merci')
+        $("#success-box").removeClass("hidden");
+        $("#alert-box").addClass("hidden");
       })
       .fail(function(data) {
-        alert('Error: Le message n\'a pas été envoyé !')
+        $("#success-box").addClass("hidden");
+        $("#alert-box").removeClass("hidden");
+        organization_errors = JSON.parse(data.responseText).errors.organization;
+        $("#organization-errors-list").html("");
+        organization_errors.forEach(function(entry) {
+          $("#organization-errors-list").append("<li>"+entry+"</li>")
+        });
+        
+        contact_errors = JSON.parse(data.responseText).errors.user;
+        $("#contact-errors-list").html("");
+        contact_errors.forEach(function(entry) {
+          $("#contact-errors-list").append("<li>"+entry+"</li>")
+        });
       })
       .always(function() {
       })
