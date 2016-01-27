@@ -118,8 +118,11 @@ input {
   background: none no-repeat center top;
   background-size: cover;
 }
-.maraude-associatif h2, h3 {
+.maraude-associatif h2 {
   margin-bottom: 80px;
+}
+.maraude-associatif h3 {
+  margin-bottom: 30px;
 }
 .maraude-associatif h2 span {
   color: #ea5b0c;
@@ -151,12 +154,13 @@ input {
 .maraude-associatif-block-text ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 .maraude-associatif-block-text ul li {
   font-size: 15px;
 }
 .maraude-associatif-block-text ul li+li {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 #adherer {
