@@ -64,6 +64,9 @@ input {
 #tete .content h1 {
   margin-bottom: 50px;
 }
+#tete .content h3 {
+  margin-bottom: 20px;
+}
 #tete .content h1,
 #tete .content a.btn {
   font-family: DINNeuzeitGrotesk;
@@ -115,7 +118,7 @@ input {
   background: none no-repeat center top;
   background-size: cover;
 }
-.maraude-associatif h2 {
+.maraude-associatif h2, h3 {
   margin-bottom: 80px;
 }
 .maraude-associatif h2 span {
@@ -148,7 +151,6 @@ input {
 .maraude-associatif-block-text ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 .maraude-associatif-block-text ul li {
   font-size: 15px;
