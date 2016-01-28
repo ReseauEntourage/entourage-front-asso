@@ -88,6 +88,7 @@ input {
   width: 33%;
   margin: auto;
   display: inline-block;
+  margin-bottom: 30px;
 }
 #stats .stats-box span.number {
   color: #000;
@@ -108,10 +109,10 @@ input {
 }
 
 #equipe-maraude {
-  background-image: url(../images/background-maraude.jpg);
+  background-image: url(../images/background-associatif.jpg);
 }
 #responsable-associatif {
-  background-image: url(../images/background-associatif.jpg);
+  background-image: url(../images/background-maraude.jpg);
 }
 .maraude-associatif {
   color: #ffffff;
