@@ -84,7 +84,7 @@ input {
 }
 #stats .stats-box {
   width: 33%;
-  margin: auto;
+  margin-left: 15px;
   display: inline-block;
   margin-bottom: 30px;
 }
