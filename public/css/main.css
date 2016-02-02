@@ -59,6 +59,11 @@ input {
 #tete .content {
   max-width: 500px;
 }
+
+#tete .content.home {
+  color: black;
+}
+
 #tete .content h1 {
   margin-bottom: 50px;
 }
