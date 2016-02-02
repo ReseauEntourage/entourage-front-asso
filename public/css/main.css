@@ -95,7 +95,6 @@ input {
 #stats .stats-box {
   width: 33%;
   margin-left: 15px;
-  display: inline-block;
   margin-bottom: 30px;
 }
 #stats .stats-box span.number {
