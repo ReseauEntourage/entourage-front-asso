@@ -10,5 +10,5 @@ dir = File.join(File.dirname(__FILE__), 'initializers', '*.rb')
 Dir[dir].each {|file| require file }
 
 require './app'
-
+use Rack::Deflater
 run Sinatra::Application
