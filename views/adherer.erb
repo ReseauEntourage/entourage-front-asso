@@ -8,14 +8,25 @@
     <title>Réseau Entourage</title>
     <meta name="description" content="Adhérer à Entourage, réseau civique">
 
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/join.css" rel="stylesheet">
+    <% if ENV['RACK_ENV']=='development' %>
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="css/fonts.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/join.css" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="/images/favicon.png" />
+      <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <% else %>
+      <link href="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/fonts.css" rel="stylesheet">
+      <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/main.css" rel="stylesheet">
+      <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/join.css" rel="stylesheet">
+
+      <link rel="icon" type="image/png" href="https://d2tg8v8lbz2rug.cloudfront.net/images/favicon.png" />
+      <link rel="apple-touch-icon" href="https://d2tg8v8lbz2rug.cloudfront.net/images/apple-touch-icon.png">
+    <% end %>
 
     <meta property="og:title" content="Entourage, réseau civique">
     <meta property="og:type" content="website">
@@ -37,17 +48,29 @@
           <div id="header" style="margin:10px">
             <div id="brand" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
               <h3><a target="_blank" href="http://asso.entourage.social" >
-                <img src="images/logo.png">
+                <% if ENV['RACK_ENV']=='development' %>
+                  <img src="images/logo.png">
+                <% else %>
+                  <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/logo.png" />
+                <% end %>
               </a>
               entourage</h3>
             </div>
             <div id="social" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
               <a target="_blank" href="https://www.facebook.com/EntourageReseauCivique" >
-                <img src="images/fb.png">
-              </a>
-              <a target="_blank" href="https://twitter.com/r_entour">
-                <img src="images/tw.png">
-              </a>
+                  <% if ENV['RACK_ENV']=='development' %>
+                    <img src="images/fb.png">
+                  <% else %>
+                    <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/fb.png" />
+                  <% end %>
+                </a>
+                <a target="_blank" href="https://twitter.com/r_entour">
+                  <% if ENV['RACK_ENV']=='development' %>
+                    <img src="images/tw.png">
+                  <% else %>
+                    <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/tw.png" />
+                  <% end %>
+                </a>
             </div>
           </div>
 
@@ -329,10 +352,17 @@
     </div> <!-- /.container-fluid -->
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/same_height_as.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/jquery.ui.widget.js"></script>
+    <% if ENV['RACK_ENV']=='development' %>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="js/same_height_as.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/jquery.ui.widget.js"></script>
+    <% else %>
+      <script src="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/same_height_as.js"></script>
+      <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/script.js"></script>
+      <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/jquery.ui.widget.js"></script>
+    <% end %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.5.7/jquery.fileupload.min.js"></script>
     <script src="js/file_upload.js"></script>
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/3a2d897a-8dea-4485-9caf-02a59cf45384.js"></script>
