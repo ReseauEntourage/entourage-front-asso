@@ -1,3 +1,7 @@
+configure do
+  set :static_cache_control, [:public, max_age: 60 * 60]
+end
+
 get '/' do
   @messages_form_url = "#{ENV['BASE_URL']}/messages"
   erb :home

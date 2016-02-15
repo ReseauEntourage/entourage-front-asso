@@ -7,15 +7,7 @@
 
     <title>Réseau Entourage</title>
     <meta name="description" content="Adhérer à Entourage, réseau civique">
-
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-
+    
     <meta property="og:title" content="Entourage, réseau civique">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://asso.entourage.social">
@@ -23,10 +15,23 @@
     <meta property="og:description" content="Adhérer à Entourage, réseau civique">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <% if ENV['RACK_ENV']=='development' %>
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="css/fonts.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+
+      <link rel="icon" type="image/png" href="/images/favicon.png" />
+      <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <% else %>
+      <link href="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/fonts.css" rel="stylesheet">
+      <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/main.css" rel="stylesheet">
+
+      <link rel="icon" type="image/png" href="https://d2tg8v8lbz2rug.cloudfront.net/images/favicon.png" />
+      <link rel="apple-touch-icon" href="https://d2tg8v8lbz2rug.cloudfront.net/images/apple-touch-icon.png">
+    <% end %>
   </head>
 
   <body>
