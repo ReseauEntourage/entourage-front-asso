@@ -61,6 +61,12 @@ input {
   right: 0; bottom: 0;
   transform: translate(0, 400px);
 }
+#brand {
+  text-align: left;
+}
+#social {
+  text-align: right;
+}
 #tete .content {
   max-width: 500px;
 }
@@ -158,7 +164,7 @@ input {
   top: 0; left: 0; right: 0; bottom: 0;
 }
 .maraude-associatif-block-text {
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .3);
 }
 .maraude-associatif-block-text ul {
   margin: 0;
@@ -350,4 +356,7 @@ form.material .input-field {
 }
 #bas_de_page ul {
   list-style-type: none;
+}
+#bas_de_page ul li+li {
+  margin-top: 10px;
 }
