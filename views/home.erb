@@ -41,22 +41,38 @@
         <div class="row">
           <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <div id="tete-iphone" class="hidden-xs hidden-sm">
-              <img src="images/iphone-top.png" />
+              <% if ENV['RACK_ENV']=='development' %>
+                <img src="images/iphone-top.png" />
+              <% else %>
+                <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/iphone-top.png" />
+              <% end %>
             </div>
 
             <div id="header" style="margin:10px">
               <div id="brand" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                 <h3><a target="_blank" href="http://www.entourage.social" >
+                <% if ENV['RACK_ENV']=='development' %>
                   <img src="images/logo.png">
+                <% else %>
+                  <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/logo.png" />
+                <% end %>
                 </a>
                 entourage</h3>
               </div>
               <div id="social" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                 <a target="_blank" href="https://www.facebook.com/EntourageReseauCivique" >
-                  <img src="images/fb.png">
+                  <% if ENV['RACK_ENV']=='development' %>
+                    <img src="images/fb.png">
+                  <% else %>
+                    <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/fb.png" />
+                  <% end %>
                 </a>
                 <a target="_blank" href="https://twitter.com/r_entour">
-                  <img src="images/tw.png">
+                  <% if ENV['RACK_ENV']=='development' %>
+                    <img src="images/tw.png">
+                  <% else %>
+                    <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/tw.png" />
+                  <% end %>
                 </a>
               </div>
             </div>
@@ -322,10 +338,16 @@
     </div> <!-- /.container-fluid -->
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/same_height_as.js"></script>
-    <script src="js/script.js"></script>
-
+    <% if ENV['RACK_ENV']=='development' %>
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+      <script src="js/same_height_as.js"></script>
+      <script src="js/script.js"></script>
+    <% else %>
+      <script src="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/same_height_as.js"></script>
+      <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/script.js"></script>
+    <% end %>
+    
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/3a2d897a-8dea-4485-9caf-02a59cf45384.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
