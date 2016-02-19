@@ -12,10 +12,11 @@ label {
 }
 blockquote {
   border: 0;
-  padding: 0;
+  padding: 10px;
   margin: 30px auto;
   line-height: 1.7em;
   quotes: "\201C""\201D""\2018""\2019";
+  text-align: justify;
 }
 blockquote:before,
 blockquote:after {
@@ -82,12 +83,8 @@ input {
 #tete .content.home {
   color: black;
 }
-
 #tete .content h1 {
-  margin-bottom: 50px;
-}
-#tete .content h3 {
-  margin-bottom: 20px;
+  margin: 20px;
 }
 #tete .content h1,
 #tete .content a.btn {
@@ -189,8 +186,9 @@ input {
 }
 
 #adherer {
-  margin: 20px;
-  padding: 60px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 30px 0px;
   border-style: solid;
   border-color: #eb6014;
 }
@@ -208,11 +206,11 @@ input {
   padding: 5px;
   background: #fff;
   letter-spacing: 2px;
-  font-size: 32.27px;
+  font-size: 40px;
 }
 #adherer h2 span {
   display: block;
-  font-size: 16.66px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 #equipe {
