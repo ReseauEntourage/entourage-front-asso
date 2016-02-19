@@ -48,7 +48,7 @@
               <% end %>
             </div>
 
-            <div id="header" style="margin:10px">
+            <div id="header">
               <div id="brand" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                 <h3><a target="_blank" href="http://www.entourage.social" >
                 <% if ENV['RACK_ENV']=='development' %>
@@ -60,6 +60,7 @@
                 entourage</h3>
               </div>
               <div id="social" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                <div class="logo">
                 <a target="_blank" href="https://www.facebook.com/EntourageReseauCivique" >
                   <% if ENV['RACK_ENV']=='development' %>
                     <img src="images/fb.png">
@@ -67,6 +68,8 @@
                     <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/fb.png" />
                   <% end %>
                 </a>
+                </div>
+                <div class="logo">
                 <a target="_blank" href="https://twitter.com/r_entour">
                   <% if ENV['RACK_ENV']=='development' %>
                     <img src="images/tw.png">
@@ -76,6 +79,7 @@
                 </a>
               </div>
             </div>
+            </div>
 
             <div class="clear separator">
               <div class="visible-md visible-lg" style="height:35vh;"></div>
@@ -84,8 +88,7 @@
 
             <div class="content text-center center-block">
               <h1>UNE APPLICATION AU SERVICE DE CEUX QUI N’ONT PLUS RIEN</h1>
-              <h3>VOUS ÊTES UNE ASSOCIATION&nbsp;:</h3>
-              <a href="/adherer" class="btn btn-primary">ADHÉRER</a>
+              <a href="/adherer" class="btn btn-primary">VOUS ÊTES UNE ASSOCIATION&nbsp;: ADHÉRER</a>
             </div>
 
             <div class="clear separator">
@@ -98,11 +101,13 @@
     </div> <!-- /.container-fluid -->
 
     <div class="container-fluid">
-      <div id="stats" class="text-center">
+      <div id="stats">
         <div class="row">
           <div class="col-xs-10 col-sm-10 col-md-5 col-lg-3">
             <div class="stats-box" data-stats-type="organizations">
               <span class="number">13</span>
+            </div> <!-- /.stats-box -->
+            <div class="stats-box">
               <span class="_label">
                 ASSOCIATIONS
                 PARTENAIRES
@@ -112,6 +117,8 @@
           <div class="col-xs-10 col-sm-10 col-md-5 col-lg-3">
             <div class="stats-box" data-stats-type="tours">
               <span class="number">206</span>
+            </div> <!-- /.stats-box -->
+            <div class="stats-box">
               <span class="_label">
                 MARAUDES
                 EFFECTUEES
@@ -121,8 +128,11 @@
           <div class="col-xs-10 col-sm-10 col-md-5 col-lg-3">
             <div class="stats-box" data-stats-type="encounters">
               <span class="number">768</span>
+            </div> <!-- /.stats-box -->
+            <div class="stats-box">
               <span class="_label">
                 RENCONTRES
+                REALISEES
               </span>
             </div> <!-- /.stats-box -->
           </div>
@@ -311,7 +321,7 @@
     <div class="container-fluid">
       <div id="bas_de_page">
         <div class="row">
-          <div class="col-xs-10 col-sm-4 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
+          <div class="col-xs-10 col-sm-3 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1">
             <div id="bas_de_page-infos">
               <ul>
                 <li>Entourage, 40 avenue Hoche, 75008 Paris</li>
@@ -320,7 +330,13 @@
             </div> <!-- /#bas_de_page-infos -->
           </div>
 
-          <div class="col-xs-10 col-sm-4 col-md-4 col-md-offset-0 col-lg-4 col-lg-offset-0">
+          <div id="brand-footer" class="hidden-xs col-sm-2 col-md-2 col-md-offset-0 col-lg-2 col-lg-offset-0">
+            <a target="_blank" href="http://www.entourage.social" >
+              <img src="images/logo.png">
+            </a>
+          </div>
+
+          <div class="col-xs-9 col-sm-3 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0">
             <div id="bas_de_page-links" class="text-right">
               <ul>
                 <li><a href="http://asso.entourage.social">Accueil Associations</a></li>
