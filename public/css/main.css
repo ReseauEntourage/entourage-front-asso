@@ -1,7 +1,10 @@
 html {
   overflow-x: hidden;
 }
-body { overflow-x: hidden; }
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
 h1, h2, h3, h4, p {
   margin: 0;
   font-weight: normal;
@@ -22,7 +25,6 @@ blockquote:before,
 blockquote:after {
   color: #ccc;
   float: left;
-  font-family: "Times New Roman",Times;
   position: relative;
   content: open-quote;
   font-size: 4em;
@@ -85,10 +87,6 @@ input {
 }
 #tete .content h1 {
   margin: 20px;
-}
-#tete .content h1,
-#tete .content a.btn {
-  font-family: DINNeuzeitGrotesk;
 }
 #tete .content a.btn {
   font-weight: bold;

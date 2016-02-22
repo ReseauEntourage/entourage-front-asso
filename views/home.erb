@@ -7,7 +7,7 @@
 
     <title>Réseau Entourage</title>
     <meta name="description" content="Adhérer à Entourage, réseau civique">
-    
+
     <meta property="og:title" content="Entourage, réseau civique">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://asso.entourage.social">
@@ -18,6 +18,7 @@
     <% if ENV['RACK_ENV']=='development' %>
       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
       <link href="css/fonts.css" rel="stylesheet">
       <link href="css/main.css" rel="stylesheet">
 
@@ -26,6 +27,7 @@
     <% else %>
       <link href="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
       <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/fonts.css" rel="stylesheet">
       <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/main.css" rel="stylesheet">
 
@@ -42,7 +44,7 @@
           <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <div id="tete-iphone" class="hidden-xs hidden-sm">
               <% if ENV['RACK_ENV']=='development' %>
-                <img src="images/iphone-top.png" />
+              <img src="images/iphone-top.png" />
               <% else %>
                 <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/iphone-top.png" />
               <% end %>
@@ -61,40 +63,40 @@
               </div>
               <div id="social" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                 <div class="logo">
-                <a target="_blank" href="https://www.facebook.com/EntourageReseauCivique" >
+                  <a target="_blank" href="https://www.facebook.com/EntourageReseauCivique" >
                   <% if ENV['RACK_ENV']=='development' %>
-                    <img src="images/fb.png">
+                      <img src="images/fb.png">
                   <% else %>
                     <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/fb.png" />
                   <% end %>
-                </a>
+                  </a>
                 </div>
                 <div class="logo">
-                <a target="_blank" href="https://twitter.com/r_entour">
+                  <a target="_blank" href="https://twitter.com/r_entour">
                   <% if ENV['RACK_ENV']=='development' %>
                     <img src="images/tw.png">
                   <% else %>
                     <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/tw.png" />
                   <% end %>
-                </a>
+                  </a>
+                </div>
               </div>
-            </div>
             </div>
 
             <div class="clear separator">
-              <div class="visible-md visible-lg" style="height:35vh;"></div>
+              <div class="visible-md visible-lg" style="height:25vh;"></div>
               <div class="visible-xs visible-sm" style="height:20vh;"></div>
             </div>
 
             <div class="content text-center center-block">
               <h1>UNE APPLICATION AU SERVICE DE CEUX QUI N’ONT PLUS RIEN</h1>
-                <h3>VOUS ÊTES UNE ASSOCIATION&nbsp;: </h3>
-                <a href="/adherer" class="btn btn-primary">ADHÉRER</a>
-              </div>
+              <h3>VOUS ÊTES UNE ASSOCIATION&nbsp;: </h3>
+              <a href="/adherer" class="btn btn-primary">ADHÉRER</a>
+            </div>
 
             <div class="clear separator">
-              <div class="visible-lg" style="height:35vh;"></div>
-              <div class="visible-md" style="height:50vh;"></div>
+              <div class="visible-lg" style="height:50vh;"></div>
+              <div class="visible-md" style="height:60vh;"></div>
               <div class="visible-xs visible-sm" style="height:15vh;"></div>
             </div>
           </div>
@@ -107,7 +109,7 @@
         <div class="row">
           <div class="col-xs-10 col-sm-10 col-md-5 col-lg-3">
             <div class="stats-box" data-stats-type="organizations">
-              <span class="number">13</span>
+              <span class="number">31</span>
             </div> <!-- /.stats-box -->
             <div class="stats-box">
               <span class="_label">
@@ -118,7 +120,7 @@
           </div>
           <div class="col-xs-10 col-sm-10 col-md-5 col-lg-3">
             <div class="stats-box" data-stats-type="tours">
-              <span class="number">206</span>
+              <span class="number">270</span>
             </div> <!-- /.stats-box -->
             <div class="stats-box">
               <span class="_label">
@@ -129,7 +131,7 @@
           </div>
           <div class="col-xs-10 col-sm-10 col-md-5 col-lg-3">
             <div class="stats-box" data-stats-type="encounters">
-              <span class="number">768</span>
+              <span class="number">965</span>
             </div> <!-- /.stats-box -->
             <div class="stats-box">
               <span class="_label">
@@ -365,8 +367,7 @@
       <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/same_height_as.js"></script>
       <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/script.js"></script>
     <% end %>
-    
-    <script type="text/javascript" src="http://fast.fonts.net/jsapi/3a2d897a-8dea-4485-9caf-02a59cf45384.js"></script>
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
