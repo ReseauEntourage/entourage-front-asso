@@ -3,6 +3,8 @@ configure do
 end
 
 get '/' do
+  resp = Net::HTTP.get_response(URI.parse("#{ENV['BASE_URL']}/stats")).body
+  @stats = JSON.parse(resp)
   @messages_form_url = "#{ENV['BASE_URL']}/messages"
   erb :home
 end
