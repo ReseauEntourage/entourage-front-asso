@@ -388,3 +388,10 @@ form.material .input-field {
 .orange {
   color: #EF662F;
 }
+.navbar {
+  font-size: 16px;
+  font-weight: 300;
+}
+.navbar-transparent .navbar-nav > li > a {
+  color: #fff;
+}

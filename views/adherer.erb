@@ -8,7 +8,6 @@
     <title>Réseau Entourage</title>
     <meta name="description" content="Adhérer à Entourage, réseau civique">
 
-    <% if ENV['RACK_ENV']=='development' %>
       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -18,19 +17,8 @@
 
       <link rel="icon" type="image/png" href="/images/favicon.png" />
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <% else %>
-      <link href="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link href="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-      <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/fonts.css" rel="stylesheet">
-      <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/main.css" rel="stylesheet">
-      <link href="https://d2tg8v8lbz2rug.cloudfront.net/css/join.css" rel="stylesheet">
 
-      <link rel="icon" type="image/png" href="https://d2tg8v8lbz2rug.cloudfront.net/images/favicon.png" />
-      <link rel="apple-touch-icon" href="https://d2tg8v8lbz2rug.cloudfront.net/images/apple-touch-icon.png">
-    <% end %>
-
-    <meta property="og:title" content="Entourage, réseau civique">
+    <meta property="og:title" content="Entourage, Réseau Social Collaboratif sur Smartphone">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://asso.entourage.social">
     <meta property="og:image" content="http://asso.entourage.social/images/og-logo.png">
@@ -47,27 +35,41 @@
     <div class="container-fluid">
       <div id="tete"><div class="overlay"></div>
         <div class="row">
-          <div id="header">
-            <div id="brand" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-              <div><a target="_blank" href="http://www.entourage.social" >
-                <img class="logo" src="images/logo.png">
-              </a>
-              entourage
-            </div>
-            </div>
-            <div id="social" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-              <div class="logo">
-                <a target="_blank" href="https://www.facebook.com/EntourageReseauCivique" >
-                    <img src="images/fb.png">
+          <!-- nav -->
+          <nav class="navbar navbar-transparent navbar-static-top navbar-padded app-navbar p-t-s">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed p-x-0" data-target="#stage" data-toggle="stage" data-distance="-250">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="./index.html">
+                  <img src="images/logo.png" class="logo" alt="logotype Entourage">
                 </a>
               </div>
-              <div class="logo">
-                <a target="_blank" href="https://twitter.com/r_entour">
-                  <img src="images/tw.png">
-                </a>
-              </div>
+
+              <div class="navbar-collapse collapse text-uppercase">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="http://entourage.social/index.html#product" title="L'application">L'application</a>
+                  </li>
+                  <li>
+                    <a href="/" title="Associations">Associations</a>
+                  </li>
+                  <li>
+                    <a href="http://entourage.social/presse.html" title="Presse">Presse</a>
+                  </li>
+                  <li >
+                    <a href="http://blog.entourage.social/" title="Blog">Blog</a>
+                  </li>
+                </ul>
+              </div><!--/.nav-collapse -->
             </div>
-          </div>
+          </nav>
+
+
 
           <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
             <div class="clear separator">
@@ -353,17 +355,10 @@
     </div> <!-- /.container-fluid -->
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <% if ENV['RACK_ENV']=='development' %>
       <script src="bootstrap/js/bootstrap.min.js"></script>
       <script src="js/same_height_as.js"></script>
       <script src="js/script.js"></script>
       <script src="js/jquery.ui.widget.js"></script>
-    <% else %>
-      <script src="https://d2tg8v8lbz2rug.cloudfront.net/bootstrap/js/bootstrap.min.js"></script>
-      <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/same_height_as.js"></script>
-      <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/script.js"></script>
-      <script src="https://d2tg8v8lbz2rug.cloudfront.net/js/jquery.ui.widget.js"></script>
-    <% end %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.5.7/jquery.fileupload.min.js"></script>
     <script src="js/file_upload.js"></script>
     <script>
