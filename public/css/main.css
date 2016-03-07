@@ -48,6 +48,10 @@ input {
 }
 #header {
   margin:20px;
+  min-height: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #tete {
   color: #fff;
@@ -76,7 +80,7 @@ input {
   text-align: right;
 }
 #social .logo {
-  padding:10px;
+  padding:0px 10px;
   float: right;
 }
 #tete .content {
@@ -85,7 +89,7 @@ input {
 #tete .content.home {
   color: black;
 }
-#tete .content h1 {
+#tete .content h1,h3 {
   margin: 20px;
 }
 #tete .content a.btn {
@@ -98,7 +102,10 @@ input {
   background: #ea5b0c;
   padding: 10px 45px;
 }
-
+#tete .logo {
+  height: 50px;
+  margin-left: 20px;
+}
 #stats {
   padding: 60px 10px;
   background: #ea5b0c;
@@ -177,7 +184,7 @@ input {
   list-style-type: none;
 }
 .maraude-associatif-block-text ul li {
-  font-size: 15px;
+  font-size: 24px;
 }
 .maraude-associatif-block-text ul li+li {
   margin-top: 20px;
@@ -367,4 +374,17 @@ form.material .input-field {
 }
 #bas_de_page ul li+li {
   margin-top: 10px;
+}
+/* ie10+ */
+@media (min-width: 768px) {
+  .app-align-center {
+    display: flex;
+    align-items: center;
+  }
+}
+.map-entourage {
+  width: 460px;
+}
+.orange {
+  color: #EF662F;
 }

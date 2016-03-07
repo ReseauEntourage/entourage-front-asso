@@ -8,14 +8,13 @@
     <title>Réseau Entourage</title>
     <meta name="description" content="Adhérer à Entourage, réseau civique">
 
-    <meta property="og:title" content="Entourage, réseau civique">
+    <meta property="og:title" content="Entourage, Réseau Social Collaboratif sur Smartphone">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://asso.entourage.social">
     <meta property="og:image" content="http://asso.entourage.social/images/og-logo.png">
-    <meta property="og:description" content="Adhérer à Entourage, réseau civique">
+    <meta property="og:description" content="L’application Entourage connecte les riverains, les associations et les sans-abri pour plus de chaleur humaine dans nos quartiers">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <% if ENV['RACK_ENV']=='development' %>
       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -52,14 +51,15 @@
 
             <div id="header">
               <div id="brand" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                <h3><a target="_blank" href="http://www.entourage.social" >
-                <% if ENV['RACK_ENV']=='development' %>
-                  <img src="images/logo.png">
-                <% else %>
-                  <img src="https://d2tg8v8lbz2rug.cloudfront.net/images/logo.png" />
-                <% end %>
+                <div><a target="_blank" href="http://www.entourage.social" >
+                  <% if ENV['RACK_ENV']=='development' %>
+                    <img class="logo" src="images/logo.png">
+                  <% else %>
+                    <img class="logo" src="https://d2tg8v8lbz2rug.cloudfront.net/images/logo.png" />
+                  <% end %>
                 </a>
-                entourage</h3>
+                entourage
+              </div>
               </div>
               <div id="social" class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                 <div class="logo">
@@ -84,10 +84,8 @@
             </div>
 
             <div class="clear separator">
-              <div class="visible-md visible-lg" style="height:25vh;"></div>
-              <div class="visible-xs visible-sm" style="height:20vh;"></div>
+              <div class="visible-md visible-lg" style="height:10vh;"></div>
             </div>
-
             <div class="content text-center center-block">
               <h1>UNE APPLICATION AU SERVICE DE CEUX QUI N’ONT PLUS RIEN</h1>
               <h3>VOUS ÊTES UNE ASSOCIATION&nbsp;: </h3>
@@ -95,9 +93,9 @@
             </div>
 
             <div class="clear separator">
-              <div class="visible-lg" style="height:50vh;"></div>
-              <div class="visible-md" style="height:60vh;"></div>
-              <div class="visible-xs visible-sm" style="height:15vh;"></div>
+              <div class="visible-lg" style="height:28vh;"></div>
+              <div class="visible-md" style="height:33vh;"></div>
+              <div class="visible-xs visible-sm" style="height:3vh;"></div>
             </div>
           </div>
         </div> <!-- /.row -->
@@ -173,10 +171,10 @@
               <h2><span>VOUS FAITES PARTIE</span>D'UNE ÉQUIPE DE MARAUDE</h2>
               <h3>Dans votre poche, un seul outil qui vous permet de&nbsp;:</h3>
               <ul>
-                <li>Garder une trace du parcours de vos actions</li>
-                <li>Se coordonner avec d’autres associations</li>
-                <li>Simplifier la rédaction des comptes-rendus grâce à la dictée vocale</li>
-                <li>Consulter le Guide de Solidarité pour des réponses adaptées</li>
+                <li>- Garder une trace du parcours de vos actions</li>
+                <li>- Se coordonner avec d’autres associations</li>
+                <li>- Simplifier la rédaction des comptes-rendus grâce à la dictée vocale</li>
+                <li>- Consulter le Guide de Solidarité pour des réponses adaptées</li>
               </ul>
             </div>
           </div>
@@ -206,15 +204,45 @@
               <h2><span>VOUS ÊTES</span>RESPONSABLE ASSOCIATIF</h2>
               <h3>Dans votre poche, un seul outil qui vous permet de&nbsp;:</h3>
               <ul>
-                <li>Mesurer vos actions</li>
-                <li>Suivre le parcours de vos équipes</li>
-                <li>Communiquer avec elles sur le terrain</li>
-                <li>Améliorer la gestion de vos actions</li>
+                <li>- Mesurer vos actions</li>
+                <li>- Suivre le parcours de vos équipes</li>
+                <li>- Communiquer avec elles sur le terrain</li>
+                <li>- Améliorer la gestion de vos actions</li>
               </ul>
             </div>
           </div>
         </div> <!-- /.row -->
       </div> <!-- /#responsable-associatif -->
+
+      <div id="assocs" class="text-center col-xs-10 col-sm-10 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
+        <div class="clear separator">
+          <div class="visible-md visible-lg" style="height:30px;"></div>
+          <div class="visible-xs visible-sm" style="height:20px;"></div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="m-t-0">Ils nous font déjà confiance</h2>
+            </div>
+          </div>
+          <div class="row app-align-center">
+            <div class="col-sm-5 col-sm-push-5">
+                <h3><span class="orange">18</span> associations <br />dans <span class="orange">8</span> villes <br />font confiance à Entourage !<br /></h3>
+                <a href="http://entourage.social/associations.html" class="btn btn-primary btn-outline m-t" role="button" title="Voir les associations">Voir les associations</a>
+            </div>
+            <div class="col-sm-5 col-sm-pull-5">
+              <a href="http://entourage.social/associations.html" class="lead m-b-md p-t-md">
+                 <img src="images/carte_ville_associaton_entourage.png" class="map-entourage" alt="Entourage, les associations">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear separator">
+        <div class="visible-md visible-lg" style="height:60px;"></div>
+        <div class="visible-xs visible-sm" style="height:30px;"></div>
+      </div>
 
       <div id="adherer" class="col-xs-10 col-sm-10 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1">
         <div class="row">
@@ -225,16 +253,6 @@
           </div>
         </div> <!-- /.row -->
       </div> <!-- /#adherer -->
-
-      <div class="clear separator">
-        <div class="visible-md visible-lg" style="height:30px;"></div>
-        <div class="visible-xs visible-sm" style="height:20px;"></div>
-      </div>
-
-      <div class="clear separator">
-        <div class="visible-md visible-lg" style="height:60px;"></div>
-        <div class="visible-xs visible-sm" style="height:30px;"></div>
-      </div>
 
       <div id="contact">
         <form id="contact_form" class="material" method="POST" action="<%= @messages_form_url %>">
