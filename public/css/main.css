@@ -89,7 +89,7 @@ input {
 #tete .content.home {
   color: black;
 }
-#tete .content h1,h3 {
+#tete .content h1,h2,h3 {
   margin: 20px;
 }
 #tete .content a.btn {
@@ -154,6 +154,7 @@ input {
   color: #ea5b0c;
   display: block;
   font-size: .8em;
+  padding-bottom: 10px;
 }
 .maraude-associatif-block {
   padding: 50px;
@@ -179,7 +180,7 @@ input {
   background: rgba(0, 0, 0, .3);
 }
 .maraude-associatif-block-text ul {
-  margin: 0;
+  margin: 0px 20px;
   padding: 0;
   list-style-type: none;
 }
