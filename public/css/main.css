@@ -68,7 +68,7 @@ input {
 #tete-iphone {
   position: absolute;
   right: 0; bottom: 0;
-  transform: translate(0, 400px);
+  transform: translate(0, 450px);
 }
 #brand {
   text-align: left;
@@ -107,7 +107,7 @@ input {
   margin-left: 20px;
 }
 #stats {
-  padding: 60px 10px;
+  padding: 10px;
   background: #ea5b0c;
 }
 #stats .stats-box {
