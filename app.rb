@@ -1,3 +1,5 @@
+use Rack::SslEnforcer unless [nil, 'development'].include?(ENV['RACK_ENV'])
+
 configure do
   set :static_cache_control, [:public, max_age: 60 * 60]
 end
