@@ -1,4 +1,4 @@
-RedirectPermanent / https://www.entourage.social/associations/
-RedirectPermanent /adherer https://www.entourage.social/associations/
-RedirectPermanent /sponsors https://www.entourage.social/associations/
+Redirect permanent / https://www.entourage.social/associations/
+Redirect permanent /adherer https://www.entourage.social/associations/
+Redirect permanent /sponsors https://www.entourage.social/associations/
 
