@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '~> 2.5.1'
 
 gem 'sinatra',    '~> 1.4.6'
 gem 'aws-sdk',    '~> 2.2.8'
